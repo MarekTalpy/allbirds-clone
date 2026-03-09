@@ -1,3 +1,17 @@
+.nav-button__container {
+  display: inline-block;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-button__container:hover .nav-button__children {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 .nav-button__link {
   font-weight: bold;
   cursor: pointer;
@@ -9,19 +23,12 @@
 
 .nav-button__children {
   position: absolute;
-  top: 100%;
+  top: 70px;
   left: 0px;
   width: 100vw;
   visibility: hidden;
   opacity: 0;
   transform: translateY(10px);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   pointer-events: none;
-}
-
-.nav-button__link:hover + .nav-button__children {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }

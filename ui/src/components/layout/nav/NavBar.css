@@ -1,0 +1,38 @@
+@import '../../../styles/variables.css';
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: var(--spacing-4) var(--spacing-10);
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.navbar__logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-6);
+}
+
+.navbar__nav-list-item {
+  /* position: relative; */
+}
+
+.navbar__actions {
+  flex: 1;
+}

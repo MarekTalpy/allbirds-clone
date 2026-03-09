@@ -1,0 +1,60 @@
+@import '../../styles/variables.css';
+
+.info-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--spacing-12);
+  height: 40px;
+  background-color: var(--color-accent);
+}
+
+.info-bar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  font-size: var(--text-sm);
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+.info-bar__content {
+  position: relative;
+  flex: 1;
+  height: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-bar__button {
+  --button-size: 24px;
+
+  all: unset;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--button-size);
+  width: var(--button-size);
+  cursor: pointer;
+}
+
+.info-bar__text {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 20px, 0);
+  opacity: 0;
+  transition:
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.45s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.info-bar__text--active {
+  transform: translate3d(-50%, 0, 0);
+  opacity: 1;
+}

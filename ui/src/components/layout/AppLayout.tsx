@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router';
+
+import './AppLayout.css';
 import InfoBar from './InfoBar';
-import NavBar from './NavBar';
+import NavBar from './nav/NavBar';
 import AppFooter from './AppFooter';
 
 const AppLayout = () => {
@@ -12,7 +14,7 @@ const AppLayout = () => {
       <header>
         <NavBar />
       </header>
-      <main>
+      <main className="app-layout__main">
         <Outlet />
       </main>
       <footer>

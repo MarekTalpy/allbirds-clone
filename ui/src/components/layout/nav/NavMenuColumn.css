@@ -1,0 +1,15 @@
+@import '../../../styles/variables.css';
+
+.nav-menu-column__title {
+  font-weight: 500;
+  margin-bottom: var(--spacing-4);
+}
+
+.nav-menu-column__text {
+  margin-bottom: var(--spacing-2);
+  color: var(--text-subdued);
+}
+
+.nav-menu-column__text:hover {
+  color: var(--text-primary);
+}

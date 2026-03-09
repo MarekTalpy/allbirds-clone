@@ -1,0 +1,27 @@
+.nav-button__link {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-button__link:hover {
+  opacity: 0.7;
+}
+
+.nav-button__children {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100vw;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.nav-button__link:hover + .nav-button__children {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

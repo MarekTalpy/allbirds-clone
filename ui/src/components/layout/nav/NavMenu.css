@@ -1,0 +1,8 @@
+@import '../../../styles/variables.css';
+
+.nav-menu {
+  display: flex;
+  gap: var(--spacing-10);
+  width: 100%;
+  padding: var(--spacing-10);
+}

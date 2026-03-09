@@ -1,0 +1,6 @@
+.navbar__nav-list-item:hover .nav-button__children {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

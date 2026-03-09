@@ -8,6 +8,7 @@ import Checkout from './pages/Checkout';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 import AppLayout from './layout/AppLayout';
+import CollectionDetail from './pages/CollectionDetail';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route element={<AppLayout />}>
         <Route index element={<Home />} />
         <Route path="collections" element={<Collections />} />
+        <Route path="collections/:collectionId" element={<CollectionDetail />} />
         <Route path="products" element={<Products />} />
         <Route path="cart" element={<Cart />} />
         <Route path="checkout" element={<Checkout />} />

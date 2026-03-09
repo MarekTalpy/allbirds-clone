@@ -1,3 +1,5 @@
+@import '../../../styles/variables.css';
+
 .nav-button__container {
   display: inline-block;
   height: 70px;
@@ -8,8 +10,8 @@
 .nav-button__container:hover .nav-button__children {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
+  border-top: 1px solid var(--background-secondary);
 }
 
 .nav-button__link {
@@ -28,7 +30,6 @@
   width: 100vw;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   pointer-events: none;
 }

@@ -1,0 +1,15 @@
+@import '../styles/variables.css';
+
+.search-side-menu-content {
+  padding: var(--spacing-8) 0px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.search-side-menu-content__search-container {
+  padding: 0px var(--spacing-10);
+}
+
+.search-side-menu-content__main {
+  padding-top: var(--spacing-8);
+}

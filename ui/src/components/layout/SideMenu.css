@@ -5,7 +5,7 @@
   top: var(--spacing-3);
   right: var(--spacing-3);
   bottom: var(--spacing-3);
-  width: 384px;
+  width: 568px;
   height: calc(100vh - (var(--spacing-3) * 2));
   background-color: var(--background-primary);
   z-index: 200;

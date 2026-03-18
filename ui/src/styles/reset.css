@@ -31,6 +31,12 @@ button {
   cursor: pointer;
 }
 
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
 ul,
 ol {
   list-style: none;

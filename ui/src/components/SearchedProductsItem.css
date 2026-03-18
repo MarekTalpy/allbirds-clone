@@ -1,0 +1,18 @@
+@import '../styles/variables.css';
+
+.searched-products-item__wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.searched-products-item__name {
+  margin-bottom: var(--spacing-0-5);
+  font-size: var(--text-h6);
+  font-weight: bold;
+}
+
+.searched-products-item__price {
+  font-size: var(--text-base);
+  color: var(--text-subdued);
+}

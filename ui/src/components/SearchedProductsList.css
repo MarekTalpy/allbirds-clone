@@ -1,0 +1,9 @@
+@import '../styles/variables.css';
+
+.searched-products-list__item {
+  padding: var(--spacing-2) var(--spacing-10);
+}
+
+.searched-products-list__item:hover {
+  background-color: var(--background-secondary);
+}

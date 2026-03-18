@@ -1,0 +1,36 @@
+@import '../styles/variables.css';
+
+.global-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid var(--background-secondary);
+  position: relative;
+  padding-right: var(--spacing-8);
+}
+
+.global-search__input {
+  flex: 1;
+  font-size: var(--text-lg);
+  font-weight: bold;
+  padding: var(--spacing-2) 0px;
+  color: var(--text-primary);
+}
+
+.global-searc__input::placeholder {
+  color: var(--text-subdued);
+}
+
+.global-search__input:focus {
+  border-bottom-color: var(--color-accent);
+}
+
+.global-search__clear-btn {
+  position: absolute;
+  right: 0px;
+  background: transparent;
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

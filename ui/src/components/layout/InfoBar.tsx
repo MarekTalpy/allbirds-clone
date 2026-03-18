@@ -32,7 +32,7 @@ const InfoBar = () => {
     <div className="info-bar">
       <div className="info-bar__wrapper">
         <button aria-label="Previous announcement" className="info-bar__button" onClick={handlePrev}>
-          <HiChevronLeft size={ICON_SIZE} />
+          <HiChevronLeft size={ICON_SIZE} color="var(--text-secondary)" />
         </button>
         <div className="info-bar__content">
           {ANNOUNCEMENTS.map((text, index) => (
@@ -42,7 +42,7 @@ const InfoBar = () => {
           ))}
         </div>
         <button aria-label="Next announcement" className="info-bar__button" onClick={handleNext}>
-          <HiChevronRight size={ICON_SIZE} />
+          <HiChevronRight size={ICON_SIZE} color="var(--text-secondary)" />
         </button>
       </div>
     </div>

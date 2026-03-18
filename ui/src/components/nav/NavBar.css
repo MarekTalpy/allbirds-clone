@@ -1,4 +1,4 @@
-@import '../../../styles/variables.css';
+@import '../../styles/variables.css';
 
 .navbar {
   position: relative;
@@ -11,8 +11,8 @@
 
 .navbar__nav {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
-  flex: 1;
   height: 100%;
 }
 
@@ -23,9 +23,9 @@
 }
 
 .navbar__nav-list {
+  display: none;
   margin: 0;
   padding: 0;
-  display: flex;
   gap: var(--spacing-6);
 }
 
@@ -35,4 +35,24 @@
   align-items: center;
   justify-content: flex-end;
   gap: var(--spacing-6);
+}
+
+.navbar__logo-image {
+  display: block;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .navbar__nav {
+    flex: 1;
+  }
+
+  .navbar__nav-list {
+    display: flex;
+    flex: 1;
+  }
+
+  .navbar__logo-image {
+    margin-right: 0px;
+  }
 }

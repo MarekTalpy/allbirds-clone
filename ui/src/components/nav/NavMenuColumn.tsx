@@ -9,15 +9,16 @@ type NavMenuColumnProps = {
 
 const NavMenuColumn = ({ columnWithItems }: NavMenuColumnProps) => (
   <div>
-    <Link to={`/collections/${columnWithItems.columnTitleLink}`}>
-      <h3 className="nav-menu-column__title">{columnWithItems.columnTitle}</h3>
+    <Link to={`/collections/${columnWithItems.titleLink}`}>
+      <h3 className="nav-menu-column__title">{columnWithItems.title}</h3>
     </Link>
     <ul className="nav-menu-column__list">
-      {columnWithItems.columnItems.map((item) => (
-        <Link to={`/collections/${item.link}`}>
-          <li className="nav-menu-column__text">{item.text}</li>
-        </Link>
-      ))}
+      {columnWithItems?.endItems &&
+        columnWithItems.endItems.map((item) => (
+          <Link to={`/collections/${item.link}`}>
+            <li className="nav-menu-column__text">{item.text}</li>
+          </Link>
+        ))}
     </ul>
   </div>
 );

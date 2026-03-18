@@ -1,7 +1,8 @@
 export interface INavMenuColumn {
-  columnTitle: string;
-  columnTitleLink: string;
-  columnItems: INavMenuItem[];
+  title: string;
+  titleLink: string;
+  isHighlighted?: boolean;
+  endItems?: INavMenuItem[];
 }
 
 export interface INavMenuItem {

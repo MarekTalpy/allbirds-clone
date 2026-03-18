@@ -10,7 +10,7 @@ const NavMenu = ({ columns = [] }: NavMenuProps) => {
   return (
     <ul className="nav-menu">
       {columns.map((menuColumn) => (
-        <NavMenuColumn key={menuColumn.columnTitleLink} columnWithItems={menuColumn}></NavMenuColumn>
+        <NavMenuColumn key={menuColumn.titleLink} columnWithItems={menuColumn}></NavMenuColumn>
       ))}
     </ul>
   );

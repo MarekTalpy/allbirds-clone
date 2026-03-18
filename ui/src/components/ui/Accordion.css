@@ -1,0 +1,29 @@
+@import '../../styles/variables.css';
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--spacing-3) 0px;
+}
+
+.accordion__button {
+  --circle-perimeter: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--circle-perimeter);
+  width: var(--circle-perimeter);
+  border: 1px solid var(--background-secondary);
+  border-radius: 50%;
+  background-color: var(--background-secondary);
+}
+
+.accordion__button:hover {
+  background-color: var(--color-accent);
+}
+
+.accordion__button:hover .accordion__button-chevron {
+  color: var(--text-secondary);
+}

@@ -2,7 +2,7 @@ import { Outlet } from 'react-router';
 
 import './AppLayout.css';
 import InfoBar from './InfoBar';
-import NavBar from './nav/NavBar';
+import NavBar from '../nav/NavBar';
 import AppFooter from './AppFooter';
 
 const AppLayout = () => {

@@ -6,6 +6,7 @@
   right: var(--spacing-3);
   bottom: var(--spacing-3);
   width: 568px;
+  max-width: calc(100% - (var(--spacing-3) * 2));
   height: calc(100vh - (var(--spacing-3) * 2));
   background-color: var(--background-primary);
   z-index: 200;

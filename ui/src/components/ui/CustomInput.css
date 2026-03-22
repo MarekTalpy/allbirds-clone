@@ -6,7 +6,7 @@
 
 .custom-input input {
   width: 100%;
-  padding: var(--spacing-3);
+  padding: var(--spacing-3-5);
   border: 1px solid var(--background-secondary);
   outline: none;
   font-size: 16px;

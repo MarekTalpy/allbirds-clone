@@ -7,9 +7,9 @@ import NavBarActions from './NavBarActions';
 import { useState } from 'react';
 import SideMenu from '../layout/SideMenu';
 import Overlay from '../layout/Overlay';
-import SearchSideMenuContent from '@/components/SearchSideMenuContent';
-import CartSideMenuContent from '@/components/CartSideMenuContent';
-import MenuSideMenuContent from '@/components/MenuSideMenuContent';
+import SearchSideMenuContent from '@/components/side-menu/SearchSideMenuContent';
+import CartSideMenuContent from '@/components/side-menu/CartSideMenuContent';
+import MenuSideMenuContent from '@/components/side-menu/MenuSideMenuContent';
 
 type SidePanelContent = 'search' | 'cart' | 'menu';
 

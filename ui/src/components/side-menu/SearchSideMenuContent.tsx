@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 import './SearchSideMenuContent.css';
-import GlobalSearch from './GlobalSearch';
+import GlobalSearch from '../GlobalSearch';
 import { searchedProducts } from '@/mocks/searchedProducts';
-import SearchedProductsList from './SearchedProductsList';
+import SearchedProductsList from '../SearchedProductsList';
 
 const SearchSideMenuContent = () => {
   const [searchValue, setSearchValue] = useState('');

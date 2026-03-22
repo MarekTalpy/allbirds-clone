@@ -4,8 +4,8 @@ import appLogo from '@/assets/images/logo-title.png';
 import './MenuSideMenuContent.css';
 import { menuItems } from '@/lib/constants';
 import { Link } from 'react-router';
-import Separator from './ui/Separator';
-import Accordion from './ui/Accordion';
+import Separator from '../ui/Separator';
+import Accordion from '../ui/Accordion';
 
 type MenuSideMenuContentProps = {
   onClose: () => void;

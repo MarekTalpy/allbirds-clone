@@ -11,7 +11,6 @@ export const menuItems = [
         endItems: [
           { text: 'Sneaker', link: 'mens-sneaker' },
           { text: 'Active shoes', link: 'mens-active-shoes' },
-          { text: 'Active shoes', link: 'mens-active-shoes' },
           { text: 'Water-repellent shoes', link: 'mens-water-repellent-shoes' },
           { text: 'Waterproof shoes', link: 'mens-waterproof-shoes' },
         ],
@@ -50,7 +49,6 @@ export const menuItems = [
         isHighlighted: false,
         endItems: [
           { text: 'Sneaker', link: 'womens-sneaker' },
-          { text: 'Active shoes', link: 'womens-active-shoes' },
           { text: 'Active shoes', link: 'womens-active-shoes' },
           { text: 'Flats', link: 'flats' },
           { text: 'Water-repellent shoes', link: 'womens-water-repellent-shoes' },

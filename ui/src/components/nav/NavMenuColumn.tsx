@@ -15,9 +15,9 @@ const NavMenuColumn = ({ columnWithItems }: NavMenuColumnProps) => (
     <ul className="nav-menu-column__list">
       {columnWithItems?.endItems &&
         columnWithItems.endItems.map((item) => (
-          <Link to={`/collections/${item.link}`}>
-            <li className="nav-menu-column__text">{item.text}</li>
-          </Link>
+          <li className="nav-menu-column__text" key={item.link}>
+            <Link to={`/collections/${item.link}`}>{item.text}</Link>
+          </li>
         ))}
     </ul>
   </div>

@@ -16,7 +16,7 @@ const NavBarActions = ({ onSearchOpen, onCartOpen, onMenuOpen }: NavBarActionsPr
         <HiOutlineSearch size={ICON_SIZE} />
       </button>
 
-      <Link to="/register" className="nav-btn" aria-label="Profile">
+      <Link to="/account/login" className="nav-btn" aria-label="Profile">
         <HiOutlineUser size={ICON_SIZE} />
       </Link>
 

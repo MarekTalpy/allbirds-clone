@@ -3,7 +3,7 @@ import { HiX } from 'react-icons/hi';
 import appLogo from '@/assets/images/logo-title.png';
 import './MenuSideMenuContent.css';
 import { menuItems } from '@/lib/constants';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import Separator from '../ui/Separator';
 import Accordion from '../ui/Accordion';
 
@@ -12,6 +12,17 @@ type MenuSideMenuContentProps = {
 };
 
 const MenuSideMenuContent = ({ onClose }: MenuSideMenuContentProps) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path: string) => {
+    onClose();
+
+    // Match animation (see .side-menu transition)
+    setTimeout(() => {
+      navigate(path);
+    }, 400);
+  };
+
   const renderMenuAccordions = () => {
     return menuItems.map((firstLevelItem) => {
       return firstLevelItem?.menuItems ? (
@@ -22,13 +33,19 @@ const MenuSideMenuContent = ({ onClose }: MenuSideMenuContentProps) => {
                 return (
                   <li key={secondLevelItem.titleLink}>
                     <Accordion
-                      title={<Link to={`/collections/${secondLevelItem.titleLink}`}>{secondLevelItem.title}</Link>}
+                      title={
+                        <button onClick={() => handleNavigate(`/collections/${secondLevelItem.titleLink}`)}>
+                          {secondLevelItem.title}
+                        </button>
+                      }
                     >
                       <ul className="menu-side-menu-content__accordion-content menu-side-menu-content__accordion-content--deepest">
                         {secondLevelItem.endItems.map((endItem) => {
                           return (
                             <li key={endItem.link}>
-                              <Link to={`/collections/${endItem.link}`}>{endItem.text}</Link>
+                              <button onClick={() => handleNavigate(`/collections/${endItem.link}`)}>
+                                {endItem.text}
+                              </button>
                             </li>
                           );
                         })}
@@ -43,12 +60,12 @@ const MenuSideMenuContent = ({ onClose }: MenuSideMenuContentProps) => {
       ) : (
         <>
           <li className="menu-side-menu-content__menu-item" key={firstLevelItem.titleLink}>
-            <Link
-              to={`/collections/${firstLevelItem.titleLink}`}
+            <button
               style={firstLevelItem.isHighlighted ? { color: 'var(--color-danger)' } : {}}
+              onClick={() => handleNavigate(`/collections/${firstLevelItem.titleLink}`)}
             >
               {firstLevelItem.title.toUpperCase()}
-            </Link>
+            </button>
           </li>
           <Separator />
         </>

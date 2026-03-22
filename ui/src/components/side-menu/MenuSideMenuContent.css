@@ -32,6 +32,10 @@
   padding-top: var(--spacing-3);
 }
 
+.menu-side-menu-content__accordion-content--deepest button {
+  margin-bottom: var(--spacing-2);
+}
+
 .menu-side-menu-content__menu-item {
   margin: var(--spacing-3) 0px;
 }

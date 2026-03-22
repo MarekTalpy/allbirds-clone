@@ -1,0 +1,39 @@
+@import '../../styles/variables.css';
+
+.login {
+  margin: 0px;
+  padding: var(--spacing-14) var(--spacing-5);
+  background-color: var(--background-secondary);
+}
+
+.login__title {
+  text-align: center;
+  font-size: var(--text-h1);
+  margin-bottom: var(--spacing-12);
+}
+
+.login__main {
+  width: 440px;
+  max-width: 100%;
+  margin: 0px auto var(--spacing-6) auto;
+}
+
+.login__input {
+  margin-bottom: var(--spacing-4);
+}
+
+.login__submit-btn {
+  width: 100%;
+  margin: var(--spacing-6) 0px;
+}
+
+.login__link {
+  margin-bottom: var(--spacing-2);
+}
+
+@media (min-width: 700px) {
+  .login {
+    margin: var(--spacing-10);
+    padding: var(--spacing-14) var(--spacing-5);
+  }
+}

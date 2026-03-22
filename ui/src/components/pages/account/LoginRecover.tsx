@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react';
 
 import CustomInput from '../../ui/CustomInput';
-import CustomLink from '../../ui/CustomLink';
+import CustomLink from '../../ui/TextLink';
 import CustomButton from '../../ui/CustomButton';
 import './account.css';
 import './LoginRecover.css';

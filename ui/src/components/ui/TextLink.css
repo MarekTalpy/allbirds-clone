@@ -1,12 +1,12 @@
 @import '../../styles/variables.css';
 
-.custom-link {
+.text-link {
   position: relative;
   font-size: var(--text-base);
   color: var(--text-subdued);
 }
 
-.custom-link::after {
+.text-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -19,6 +19,6 @@
   transition: transform 0.3s ease;
 }
 
-.custom-link:hover::after {
+.text-link:hover::after {
   transform: scaleX(0);
 }

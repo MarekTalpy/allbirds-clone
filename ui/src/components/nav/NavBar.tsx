@@ -10,6 +10,7 @@ import Overlay from '../layout/Overlay';
 import SearchSideMenuContent from '@/components/side-menu/SearchSideMenuContent';
 import CartSideMenuContent from '@/components/side-menu/CartSideMenuContent';
 import MenuSideMenuContent from '@/components/side-menu/MenuSideMenuContent';
+import { Link } from 'react-router';
 
 type SidePanelContent = 'search' | 'cart' | 'menu';
 
@@ -71,7 +72,9 @@ const NavBar = () => {
         </ul>
       </nav>
       <div className="navbar__logo-container">
-        <img className="navbar__logo-image" src={appLogo} alt="App logo" height={40} />
+        <Link to="/">
+          <img className="navbar__logo-image" src={appLogo} alt="App logo" height={40} />
+        </Link>
       </div>
       <div className="navbar__actions">
         <NavBarActions

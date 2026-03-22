@@ -1,0 +1,43 @@
+@import '../../styles/variables.css';
+
+.not-found {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 192px;
+  overflow: hidden;
+}
+
+.not-found::before {
+  content: '404';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--spacing-52);
+  font-weight: 800;
+  color: var(--text-subdued);
+  opacity: 0.08;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.not-found__title {
+  margin-bottom: var(--spacing-8);
+  text-align: center;
+  font-size: var(--text-h3);
+}
+
+@media (min-width: 1200px) {
+  .not-found {
+    padding: 320px;
+  }
+  .not-found::before {
+    font-size: var(--spacing-96);
+  }
+  .not-found__title {
+    font-size: var(--text-h2);
+  }
+}

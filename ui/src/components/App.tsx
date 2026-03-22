@@ -9,6 +9,8 @@ import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 import AppLayout from './layout/AppLayout';
 import CollectionDetail from './pages/CollectionDetail';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 const App = () => {
   return (
@@ -20,6 +22,10 @@ const App = () => {
         <Route path="products" element={<Products />} />
         <Route path="cart" element={<Cart />} />
         <Route path="checkout" element={<Checkout />} />
+        <Route path="account">
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

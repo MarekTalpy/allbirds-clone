@@ -1,0 +1,26 @@
+@import '../styles/variables.css';
+
+.account-container {
+  margin: 0px;
+  padding: var(--spacing-14) var(--spacing-5);
+  background-color: var(--background-secondary);
+}
+
+.account-container__title {
+  text-align: center;
+  margin-bottom: var(--spacing-12);
+  font-size: var(--text-h1);
+  font-weight: 500;
+}
+
+@media (min-width: 700px) {
+  .account-container {
+    margin: var(--spacing-10);
+    padding: var(--spacing-14) var(--spacing-5);
+  }
+
+  .account-container__title {
+    font-size: var(--text-h0);
+    font-weight: 400;
+  }
+}

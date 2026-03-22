@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+.custom-button {
+  padding: var(--spacing-4) var(--spacing-10);
+}
+
+.custom-button:hover {
+  opacity: 0.8;
+}
+
+.custom-button--primary {
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+}
+
+.custom-button--secondary {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}

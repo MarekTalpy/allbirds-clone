@@ -1,0 +1,25 @@
+@import '../../styles/variables.css';
+
+.cart-icon {
+  position: relative;
+  display: inline-flex;
+}
+
+.cart-icon__badge {
+  --badge-size: 18px;
+
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+  border-radius: 50%;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}

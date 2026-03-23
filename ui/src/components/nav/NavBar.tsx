@@ -39,7 +39,7 @@ const NavBar = () => {
         content = <SearchSideMenuContent />;
         break;
       case 'cart':
-        content = <CartSideMenuContent />;
+        content = <CartSideMenuContent onClose={() => setIsMenuOpen(false)} />;
         break;
       case 'menu':
         content = <MenuSideMenuContent onClose={() => setIsMenuOpen(false)} />;

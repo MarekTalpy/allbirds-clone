@@ -1,0 +1,48 @@
+@import '../../styles/variables.css';
+
+.cart-with-items__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-8) var(--spacing-10);
+}
+
+.cart-with-items__cards {
+  flex: 1;
+  padding: 0px var(--spacing-10);
+}
+
+.cart-with-items__footer {
+  padding: var(--spacing-6) var(--spacing-10);
+}
+
+.card-with-items__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.cart-with-items__title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2-5);
+}
+
+.cart-with-items__title-text {
+  font-size: var(--text-h3);
+}
+
+.cart-with-items__title-badge {
+  --badge-perimeter: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--badge-perimeter);
+  height: var(--badge-perimeter);
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+  border-radius: 50%;
+  font-size: var(--text-sm);
+  font-weight: bold;
+}

@@ -4,3 +4,9 @@ export const formatPrice = (price: number, currency: string = 'EUR', locale: str
     currency,
   }).format(price);
 };
+
+export const createPrice = (amount: number, currency: string = '$') =>
+  Object.freeze({
+    amount: Number(amount.toFixed(2)),
+    currency,
+  });

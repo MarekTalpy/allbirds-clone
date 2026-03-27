@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+.quantity-input {
+  width: 48px;
+  padding: var(--spacing-2) 0px;
+  font-size: var(--text-base);
+  text-align: center;
+  border: 1px solid var(--background-secondary);
+  outline: none;
+  appearance: none; /* remove default styling */
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Remove spinner buttons in Chrome, Safari, Edge */
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,4 +1,4 @@
-import { menuItems } from '@/lib/constants';
+import { MENU_ITEMS } from '@/lib/constants';
 import appLogo from '@/assets/images/logo-title.png';
 import './NavBar.css';
 import NavButton from './NavButton';
@@ -53,7 +53,7 @@ const NavBar = () => {
     <div className="navbar">
       <nav className="navbar__nav">
         <ul className="navbar__nav-list">
-          {menuItems.map((firstLevelItem) => {
+          {MENU_ITEMS.map((firstLevelItem) => {
             return firstLevelItem?.menuItems ? (
               <li key={firstLevelItem.titleLink}>
                 <NavButton title={firstLevelItem.title}>

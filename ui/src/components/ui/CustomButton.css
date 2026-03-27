@@ -1,6 +1,10 @@
 @import '../../styles/variables.css';
 
 .custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-3);
   padding: var(--spacing-4) var(--spacing-10);
 }
 

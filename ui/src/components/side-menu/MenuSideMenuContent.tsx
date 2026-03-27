@@ -2,7 +2,7 @@ import { HiX } from 'react-icons/hi';
 
 import appLogo from '@/assets/images/logo-title.png';
 import './MenuSideMenuContent.css';
-import { menuItems } from '@/lib/constants';
+import { MENU_ITEMS, SIDE_PANEL_ANIMATION_DURATION } from '@/lib/constants';
 import { Link, useNavigate } from 'react-router';
 import Separator from '../ui/Separator';
 import Accordion from '../ui/Accordion';
@@ -20,11 +20,11 @@ const MenuSideMenuContent = ({ onClose }: MenuSideMenuContentProps) => {
     // Match animation (see .side-menu transition)
     setTimeout(() => {
       navigate(path);
-    }, 400);
+    }, SIDE_PANEL_ANIMATION_DURATION);
   };
 
   const renderMenuAccordions = () => {
-    return menuItems.map((firstLevelItem) => {
+    return MENU_ITEMS.map((firstLevelItem) => {
       return firstLevelItem?.menuItems ? (
         <li key={firstLevelItem.titleLink}>
           <Accordion title={<Link to={`/collections/${firstLevelItem.titleLink}`}>{firstLevelItem.title}</Link>}>

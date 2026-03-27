@@ -1,4 +1,4 @@
-export const menuItems = [
+export const MENU_ITEMS = [
   {
     title: 'Men',
     titleLink: 'men',
@@ -113,3 +113,5 @@ export const menuItems = [
     ],
   },
 ];
+
+export const SIDE_PANEL_ANIMATION_DURATION = 400;

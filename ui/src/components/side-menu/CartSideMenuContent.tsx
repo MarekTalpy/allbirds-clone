@@ -1,6 +1,7 @@
-import { HiX } from 'react-icons/hi';
-
+import CartWithItems from './CartWithItems';
 import EmptyCart from './EmptyCart';
+import { order } from '@/mocks/order';
+import type { IOrder } from '@/lib/types';
 import './CartSideMenuContent.css';
 
 type CartSideMenuContentProps = {
@@ -8,16 +9,15 @@ type CartSideMenuContentProps = {
 };
 
 const CartSideMenuContent = ({ onClose }: CartSideMenuContentProps) => {
+  const myOrder: IOrder = { ...order };
+
   return (
     <div className="cart-side-menu-content">
-      <header className="cart-side-menu-content__header">
-        <button className="cart-side-menu-content__close" onClick={onClose}>
-          <HiX size={20}></HiX>
-        </button>
-      </header>
-      <section className="cart-side-menu-content__empty-cart">
+      {myOrder?.items?.length > 0 ? (
+        <CartWithItems onClose={onClose} order={myOrder} />
+      ) : (
         <EmptyCart onClose={onClose} />
-      </section>
+      )}
     </div>
   );
 };

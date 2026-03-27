@@ -1,0 +1,50 @@
+@import '../../styles/variables.css';
+
+.cart-total-with-checkout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.cart-total-with-checkout__prices-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.cart-total-with-checkout__price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-total-with-checkout__subtotal,
+.cart-total-with-checkout__shipping {
+  font-size: var(--text-base);
+  color: var(--text-subdued);
+}
+
+.cart-total-with-checkout__total {
+  font-size: var(--text-h4);
+}
+
+.cart-total-with-checkout__shipping-info {
+  font-size: var(--text-sm);
+  color: var(--text-subdued);
+}
+
+.cart-total-with-checkout__checkout-btn {
+  width: 100%;
+}
+
+.cart-total-with-checkout__cards {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.cart-total-with-checkout__cards img {
+  width: 50px;
+  height: 32px;
+  border: 1px solid var(--background-secondary);
+  border-radius: 6px;
+}

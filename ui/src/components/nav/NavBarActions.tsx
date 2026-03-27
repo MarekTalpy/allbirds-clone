@@ -3,6 +3,7 @@ import { HiOutlineMenuAlt3, HiOutlineSearch, HiOutlineUser } from 'react-icons/h
 
 import CartIcon from '../ui/CartIcon';
 import './NavBarActions.css';
+import { order } from '@/mocks/order';
 
 type NavBarActionsProps = {
   onSearchOpen: () => void;
@@ -24,7 +25,7 @@ const NavBarActions = ({ onSearchOpen, onCartOpen, onMenuOpen }: NavBarActionsPr
       </Link>
 
       <button className="nav-btn--cart" onClick={onCartOpen} aria-label="Cart">
-        <CartIcon />
+        <CartIcon count={order?.items?.length} />
       </button>
 
       <button onClick={onMenuOpen} aria-label="Open Menu">

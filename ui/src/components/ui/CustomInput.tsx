@@ -1,19 +1,30 @@
-import type { HTMLInputTypeAttribute } from 'react';
-
 import './CustomInput.css';
 
 type CustomInputProps = {
-  value: string;
+  value: string | number;
   placeholder?: string;
   containerClasses?: string[];
-  inputType?: HTMLInputTypeAttribute;
+  inputType?: React.HTMLInputTypeAttribute;
   onChange: (value: string) => void;
-};
+} & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'onChange' | 'value' | 'type'>;
 
-const CustomInput = ({ value, placeholder, containerClasses, inputType = 'text', onChange }: CustomInputProps) => {
+const CustomInput = ({
+  value,
+  placeholder,
+  containerClasses,
+  inputType = 'text',
+  onChange,
+  ...rest
+}: CustomInputProps) => {
   return (
     <div className={['custom-input', ...(containerClasses || [])].join(' ')}>
-      <input value={value} placeholder={placeholder} onChange={(e) => onChange(e.target.value)} type={inputType} />
+      <input
+        {...rest}
+        value={value}
+        placeholder={placeholder}
+        onChange={(e) => onChange(e.target.value)}
+        type={inputType}
+      />
     </div>
   );
 };

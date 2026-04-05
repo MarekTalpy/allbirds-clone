@@ -1,71 +1,22 @@
 @import '../../styles/variables.css';
 
-.home-page__varsity {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-page__varsity-image {
-  aspect-ratio: 1 / 1;
-  background-image: url('/src/assets/images/homeVarsityMobile.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.home-page__varsity-content {
-  padding: var(--spacing-5) var(--spacing-5) 0;
-  color: var(--text-primary);
-}
-
-.home-page__title {
-  font-size: var(--text-h0);
-  font-weight: 300;
-  margin-bottom: var(--spacing-5);
-}
-
-.home-page__description {
-  margin-bottom: var(--spacing-6);
-  font-weight: 500;
-  font-size: var(--text-base);
-}
-
-.home-page__buttons {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-4);
-  font-weight: bold;
-}
-
-.home-page__button {
-  width: 100%;
+.home-page__collection-cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--spacing-8) var(--spacing-5);
 }
 
 @media (min-width: 700px) {
-  .home-page__varsity {
-    position: relative;
+  .home-page__collection-cards-container {
+    gap: var(--spacing-6);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
+}
 
-  .home-page__varsity-image {
-    aspect-ratio: 896 / 336;
-    background-image: url('/src/assets/images/homeVarsity.webp');
-  }
-
-  .home-page__varsity-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--spacing-12);
-    color: var(--text-secondary);
-  }
-
-  .home-page__buttons {
-    flex-direction: row;
-  }
-
-  .home-page__button {
-    background-color: var(--background-primary);
-    color: var(--text-primary);
+@media (min-width: 1200px) {
+  .home-page__collection-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 }

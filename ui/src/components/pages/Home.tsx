@@ -1,6 +1,7 @@
 import './Home.css';
 import CollectionCards from '../home/CollectionCards';
 import CollectionWideCard from '../home/CollectionWideCard';
+import ImageTextBanner from '../home/ImageTextBanner';
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <section className="home-page__collection-cards-container">
         <CollectionCards />
       </section>
+      <ImageTextBanner />
     </>
   );
 };

@@ -30,7 +30,7 @@
   font-size: var(--text-h3);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
   .not-found {
     padding: 320px;
   }

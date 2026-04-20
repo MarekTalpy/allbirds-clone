@@ -3,14 +3,15 @@ import { Route, Routes } from 'react-router';
 import './App.css';
 import Home from './pages/Home';
 import Collections from './pages/Collections';
+import CollectionDetail from './pages/CollectionDetail';
 import Products from './pages/Products';
+import ProductDetail from './pages/ProductDetail';
 import Checkout from './pages/Checkout';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 import AppLayout from './layout/AppLayout';
-import CollectionDetail from './pages/CollectionDetail';
-import Login from './pages/account/Login';
 import Register from './pages/account/Register';
+import Login from './pages/account/Login';
 import LoginRecover from './pages/account/LoginRecover';
 import ShippingPolicy from './pages/policies/ShippingPolicy';
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="collections" element={<Collections />} />
         <Route path="collections/:collectionId" element={<CollectionDetail />} />
         <Route path="products" element={<Products />} />
+        <Route path="products/:productId" element={<ProductDetail />} />
         <Route path="cart" element={<Cart />} />
         <Route path="checkout/:orderId" element={<Checkout />} />
         <Route path="account">

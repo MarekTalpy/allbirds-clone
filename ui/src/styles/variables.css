@@ -10,9 +10,10 @@
   --background-secondary: #2121210d;
 
   /* Breakpoints */
-  --bp-sm: 700px;
-  --bp-md: 1000px;
-  --bp-lg: 1200px;
+  --bp-sm: 43.75em; /* 700px */
+  --bp-md: 62.5em; /* 1000px */
+  --bp-lg: 75em; /* 1200px */
+  --bp-xl: 100em; /* 1600px */
 
   /* Spacing */
   --spacing-0-5: 0.125rem; /* 2px */

@@ -40,7 +40,7 @@
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .home-page__varsity {
     position: relative;
   }

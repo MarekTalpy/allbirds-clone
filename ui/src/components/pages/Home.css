@@ -3,20 +3,39 @@
 .home-page__collection-cards-container {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.home-page__content-wrapper {
   padding: var(--spacing-8) var(--spacing-5);
 }
 
-@media (min-width: 700px) {
+.home-page__products-slider-tabs {
+  margin-bottom: var(--spacing-10);
+}
+
+@media (min-width: 43.75em) {
   .home-page__collection-cards-container {
     gap: var(--spacing-6);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+  .home-page__content-wrapper {
+    padding: var(--spacing-12) var(--spacing-12);
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
   .home-page__collection-cards-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+  }
+  .home-page__content-wrapper {
+    padding: var(--spacing-16) var(--spacing-12);
+  }
+}
+
+@media (min-width: 100em) {
+  .home-page__content-wrapper {
+    padding: var(--spacing-16) var(--spacing-40);
   }
 }

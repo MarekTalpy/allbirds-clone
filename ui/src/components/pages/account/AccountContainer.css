@@ -13,7 +13,7 @@
   font-weight: 500;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .account-container {
     margin: var(--spacing-10);
     padding: var(--spacing-14) var(--spacing-5);

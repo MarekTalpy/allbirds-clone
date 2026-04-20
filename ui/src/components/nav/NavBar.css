@@ -37,7 +37,7 @@
   gap: var(--spacing-6);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
   .navbar__nav {
     flex: 1;
   }

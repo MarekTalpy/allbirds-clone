@@ -1,0 +1,109 @@
+@import '../styles/variables.css';
+
+.product-tile:hover .product-tile__add-btn {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.product-tile__image-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: var(--spacing-5);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: var(--background-secondary);
+  cursor: pointer;
+}
+
+.product-tile__selected-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-tile__selected-image-badge {
+  position: absolute;
+  top: var(--spacing-4);
+  left: var(--spacing-4);
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: var(--text-base);
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+}
+
+.product-tile__add-btn {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  bottom: var(--spacing-4);
+  right: var(--spacing-4);
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.product-tile__images-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  padding: var(--spacing-0-5);
+  margin-bottom: var(--spacing-2);
+}
+
+.product-tile__images-container {
+  display: flex;
+  gap: var(--spacing-2);
+  overflow: hidden;
+}
+
+.product-tile__chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-tile__chevron-left {
+  left: 0;
+}
+
+.product-tile__chevron-right {
+  right: 0;
+}
+
+.product-tile__image-wrapper {
+  width: clamp(30px, 3vw, 40px);
+  height: clamp(30px, 3vw, 40px);
+  background-color: var(--background-secondary);
+  cursor: pointer;
+}
+
+.product-tile__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-tile__image-wrapper--selected {
+  border: 2px solid var(--color-accent);
+}
+
+.product-tile__product-name {
+  margin-bottom: var(--spacing-1);
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+
+.product-tile__product-price {
+  font-size: var(--text-base);
+  color: var(--text-subdued);
+}
